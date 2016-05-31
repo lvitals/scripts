@@ -1,11 +1,12 @@
 #!/bin/bash
 
-CONFFILE=/etc/tor/torrc
-
 export BLUE='\033[1;94m'
 export GREEN='\033[1;92m'
 export RED='\033[1;91m'
 export ENDC='\033[1;00m'
+
+# Config file tor
+CONFFILE=/etc/tor/torrc
 
 # Destinations you don't want routed through Tor
 NON_TOR="192.168.0.0/16 172.16.0.0/12 10.0.0.0/8"
